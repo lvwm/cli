@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lvwm/cli/issues"
   },
-  "homepage": "https://github.com/lvwm/cli#readme"
+  "homepage": "https://github.com/lvwm/cli#readme",
+  "dependencies": {
+    "commander": "^7.2.0"
+  }
 }
