@@ -5,7 +5,7 @@ program.version("0.0.1");
 program.usage('command [options]')
 
 program
-  .command("chrome [name]")
+  .command("chrome [name...]")
   .usage("[name] [options]")
   .description("use chrome to open specified urls")
   .option("-a, --add", "add url to list")
