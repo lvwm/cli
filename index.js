@@ -9,6 +9,7 @@ program
   .usage("[name] [options]")
   .description("use chrome to open specified urls")
   .option("-a, --add", "add url to list")
+  .option("-d, --delete <name>", "remove a url item by name")
   .option("--name <name>", "site name")
   .option("--url <url>", "site url")
   .action((name, options) => {
