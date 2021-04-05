@@ -10,6 +10,7 @@ program
   .description("use chrome to open specified urls")
   .option("-a, --add", "add url to list")
   .option("-d, --delete <name>", "remove a url item by name")
+  .option("-l, --list", "list all urls")
   .option("--name <name>", "site name")
   .option("--url <url>", "site url")
   .action((name, options) => {
