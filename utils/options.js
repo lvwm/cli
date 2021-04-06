@@ -21,6 +21,10 @@ class Options {
       return "";
     }
   }
+
+  save(data) {
+    fs.writeFileSync(config_file, JSON.stringify(data, null, 2));
+  }
 }
 
 module.exports = new Options(config_file);
