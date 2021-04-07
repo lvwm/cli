@@ -5,14 +5,20 @@ const config_file = path.resolve(process.cwd(), "config.json");
 class Options {
   constructor(file) {
     this.file = file;
+    this.config = {};
+  }
+
+  get urls() {
+    return this.config.chrome && this.config.chrome.urls
+      ? this.config.chrome.urls
+      : "";
   }
 
   load() {
-    let config = {};
     if (fs.existsSync(this.file)) {
       try {
-        config = require(this.file);
-        return config;
+        this.config = require(this.file);
+        return this.config;
       } catch {
         return "";
       }
