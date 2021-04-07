@@ -13,6 +13,7 @@ program
   .option("-l, --list", "list all urls")
   .option("--name <name>", "site name")
   .option("--url <url>", "site url")
+  .option("--all", "open all urls")
   .action((name, options) => {
     require("./lib/chrome")(name, options);
   });
