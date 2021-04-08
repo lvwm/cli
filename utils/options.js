@@ -14,6 +14,14 @@ class Options {
       : "";
   }
 
+  set urls(value) {
+    if (!this.config.chrome) {
+      this.config.chrome = {};
+    }
+    this.config.chrome.urls = value;
+    this.save(this.config);
+  }
+
   load() {
     if (fs.existsSync(this.file)) {
       try {
