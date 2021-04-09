@@ -12,5 +12,10 @@ command chrome -l
 command -a --name <name> --url <url>
 ```
 
+### Remove a url
+```
+command chrome -d <name>
+```
+
 ## License
 MIT
