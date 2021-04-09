@@ -9,7 +9,7 @@ command chrome -l
 
 ### Add a url
 ```
-command -a --name <name> --url <url>
+command chrome -a --name <name> --url <url>
 ```
 
 ### Remove a url
