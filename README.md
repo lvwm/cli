@@ -7,5 +7,10 @@ Some useful command in macOS terminal.
 command chrome -l
 ```
 
+### Add a url
+```
+command -a --name <name> --url <url>
+```
+
 ## License
 MIT
