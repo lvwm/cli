@@ -19,3 +19,8 @@ test('add a url to options', () => {
   options.urls = [item];
   expect(options.load().chrome.urls).toStrictEqual([item])
 })
+
+test('remove urls from options', () => {
+  options.urls = [];
+  expect(options.load().chrome.urls).toStrictEqual([]);
+})
