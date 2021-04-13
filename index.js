@@ -15,7 +15,7 @@ program
   .option("--url <url>", "site url")
   .option("--all", "open all urls")
   .action((name, options) => {
-    require("./lib/chrome")(name, options);
+    require("./lib/browser")(name, options);
   });
 
 program.parse(process.argv);
