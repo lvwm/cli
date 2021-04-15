@@ -16,7 +16,7 @@ program
   .option("--all", "open all urls")
   .option("--safari", "use safari app open urls")
   .action((name, options) => {
-    require("./lib/chrome")(name, options);
+    require("./lib/browser")(name, options);
   });
 
 program.parse(process.argv);
