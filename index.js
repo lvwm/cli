@@ -14,6 +14,7 @@ program
   .option("--name <name>", "site name")
   .option("--url <url>", "site url")
   .option("--all", "open all urls")
+  .option("--safari", "use safari app open urls")
   .action((name, options) => {
     require("./lib/browser")(name, options);
   });
