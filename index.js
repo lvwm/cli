@@ -2,7 +2,7 @@ const { program } = require("commander");
 
 program.version("0.0.1");
 
-program.usage('command [options]')
+program.usage("command [options]");
 
 program
   .command("browser [name...]")
@@ -18,5 +18,9 @@ program
   .action((name, options) => {
     require("./lib/browser")(name, options);
   });
+
+program.command("egg <name>").action((name, options) => {
+  require("./lib/egg")(name, options);
+});
 
 program.parse(process.argv);
