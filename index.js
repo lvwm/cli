@@ -19,4 +19,10 @@ program
     require("./lib/browser")(name, options);
   });
 
+program
+  .command("egg <name>")
+  .action((name, options) => {
+    console.log(name, options);
+  })
+
 program.parse(process.argv);
