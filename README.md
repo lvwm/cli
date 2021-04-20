@@ -17,5 +17,9 @@ command browser -a --name <name> --url <url>
 command browser -d <name>
 ```
 
+### Create a egg.js project
+```
+command egg <name>
+```
 ## License
 MIT
