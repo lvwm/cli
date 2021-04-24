@@ -23,4 +23,8 @@ program.command("egg <name>").action((name, options) => {
   require("./lib/egg")(name, options);
 });
 
+program.command("dir <name>").action((name, options) => {
+  console.log(name, options);
+});
+
 program.parse(process.argv);
