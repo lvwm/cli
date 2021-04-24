@@ -21,5 +21,10 @@ command browser -d <name>
 ```
 command egg <name>
 ```
+
+### Open directory in iTerm
+```
+command dir <name>
+```
 ## License
 MIT
