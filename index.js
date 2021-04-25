@@ -23,8 +23,11 @@ program.command("egg <name>").action((name, options) => {
   require("./lib/egg")(name, options);
 });
 
-program.command("dir <name>").action((name, options) => {
-  require("./lib/directory")(name, options);
-});
+program
+  .command("dir <name>")
+  .option("-l, --list", "list all directories")
+  .action((name, options) => {
+    require("./lib/directory")(name, options);
+  });
 
 program.parse(process.argv);
