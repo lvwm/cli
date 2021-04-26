@@ -1,5 +1,5 @@
 # CLI
-Some useful command in macOS terminal.
+Some useful command in macOS terminal. include browser and build tools.
 
 # Usage
 ### List urls
